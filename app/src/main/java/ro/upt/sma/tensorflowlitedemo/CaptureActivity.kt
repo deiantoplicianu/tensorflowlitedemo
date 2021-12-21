@@ -45,6 +45,8 @@ class CaptureActivity : AppCompatActivity() {
 
                 // TODO 2: Run the recognizer which will return the recognitions.
 
+                val recog = classifier.recognize(resBitmap)
+
                 withContext(Dispatchers.Main) {
                     // TODO 3: Show the recognitions using the common Toast widget. Make use of joinToString method to concat multiple items.
 
