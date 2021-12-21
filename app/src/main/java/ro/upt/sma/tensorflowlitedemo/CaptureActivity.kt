@@ -41,6 +41,8 @@ class CaptureActivity : AppCompatActivity() {
 
                 // TODO 1: Rescale the bitmap to INPUT_SIZE width and height using the Bitmap.createScaledBitmap method.
 
+                val resBitmap = Bitmap.createScaledBitmap(bitmap, INPUT_SIZE, INPUT_SIZE, false)
+
                 // TODO 2: Run the recognizer which will return the recognitions.
 
                 withContext(Dispatchers.Main) {
