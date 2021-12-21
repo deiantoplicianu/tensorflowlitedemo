@@ -50,6 +50,9 @@ class CaptureActivity : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     // TODO 3: Show the recognitions using the common Toast widget. Make use of joinToString method to concat multiple items.
 
+                    val txt = recog.joinToString { recog -> recog.label }
+                    Toast.makeText(applicationContext, txt, Toast.LENGTH_LONG).show()
+
                 }
 
             }
